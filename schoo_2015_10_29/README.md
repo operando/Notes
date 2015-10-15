@@ -18,7 +18,7 @@
 * コードネームやバージョンで呼ぶかは人それぞれ
 * 最新バージョン6.0はAndroid M(Marshmallow)と呼ばれる
 
-![](./android_version_table.png)
+![](images/android_version_table.png)
 
 ---
 
@@ -29,9 +29,9 @@
 * 今後増えるのは最近リリースされた6.0(Marshmallow)
 * しかし、より広いバージョンに対応したアプリ開発が求められる
 
-![](./android_version_table.png)
+![](images/android_version_table.png)
 
-![](./android_version_graf.png)
+![](images/android_version_graf.png)
 
 ---
 
@@ -45,7 +45,7 @@
 * Android Studio最速入門～効率的にコーディングするための使い方
  * http://gihyo.jp/dev/serial/01/android_studio
 
-![](./AndroidStudio.png)
+![](images/AndroidStudio.png)
 
 ---
 
