@@ -21,6 +21,7 @@ https://schoo.jp/class/2898
 * 最新バージョンは6.0
 * アプリ開発するために使用する言語は基本的にはJava
 * オープンソースなOSで、誰でも開発できる
+* 様々なデバイスで動く TV,Auto,Watch,Mobile...
 
 ---
 
@@ -45,6 +46,8 @@ https://schoo.jp/class/2898
 ![](images/android_version_table.png)
 
 ![](images/android_version_graf.png)
+
+[Dashboards](https://developer.android.com/about/dashboards/index.html)
 
 ---
 
@@ -87,13 +90,12 @@ https://schoo.jp/class/2898
 
 ---
 
-## 日々どこから情報を仕入れているか
-
-* Qiita tags Android http://qiita.com/tags/android
-
----
-
 ## エミュレータの話
+
+* 開発を始めるにあたりアプリをどこで動かすか
+* エミュレータ
+ * [Genymotion](https://www.genymotion.com)
+* 実機
 
 エミュレータではわからないこと
 ハードウェア 端末依存 デザイン / 見た目 / 操作性 処理速度 etc…
@@ -102,67 +104,16 @@ Google APIs Emulator
 > Google APIs emulator をベースにしている
 > Play services のメジャーリリースごとにアップデートする予定
 
-Genymotion
-https://www.genymotion.com
-
 ---
 
-## Google Play Services
-
-https://developers.google.com/android/
+## 実機とエミュレータの違いについて
 
 
 ---
 
-## Android Studio
+## 日々どこから情報を仕入れているか
 
-https://developer.android.com/sdk/index.html
-
-Android Studio最速入門～効率的にコーディングするための使い方
-
-http://gihyo.jp/dev/serial/01/android_studio
-
----
-
-## Gradle
-
-http://gradle.org/
-
-http://google.github.io/android-gradle-dsl/
-
-http://google.github.io/android-gradle-dsl/current/
-
-http://mixi-inc.github.io/AndroidTraining/introductions/1.05.how-to-build-for-gradle.html
-
-* https://gradle.org/getting-started-android/
-* http://wasabeef.jp/android-gradle/
-* http://tools.android.com/tech-docs/new-build-system/user-guide
-
----
-
-## Dashboards
-
-https://developer.android.com/about/dashboards/index.html
-
----
-
-## About Android
-
-様々なデバイスで動く TV,Auto,Watch,Mobile...
-
----
-
-## 余談
-
-スマホの普及率 総務省のデータを参考に
-
-過去1カ月のアクティブなAndroid端末は14億台
-アプリストア「Google Play」のアクティブユーザーは10億人以上
-
-http://www.itmedia.co.jp/news/articles/1509/30/news074.html
-
-Multi-device Applications sample
-https://github.com/googlesamples/android-UniversalMusicPlayer
+* Qiita tags Android http://qiita.com/tags/android
 
 ---
 
@@ -236,6 +187,12 @@ http://developer.android.com/distribute/essentials/index.html
 
 ---
 
+## Google Play Services
+
+https://developers.google.com/android/
+
+---
+
 ## Material Design
 
 Top
@@ -279,5 +236,35 @@ https://www.google.com/design/icons/
 [WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)
 
 [wordpress-mobile](https://github.com/wordpress-mobile)
+
+---
+
+## Gradle
+
+http://gradle.org/
+
+http://google.github.io/android-gradle-dsl/
+
+http://google.github.io/android-gradle-dsl/current/
+
+http://mixi-inc.github.io/AndroidTraining/introductions/1.05.how-to-build-for-gradle.html
+
+* https://gradle.org/getting-started-android/
+* http://wasabeef.jp/android-gradle/
+* http://tools.android.com/tech-docs/new-build-system/user-guide
+
+---
+
+## 余談
+
+スマホの普及率 総務省のデータを参考に
+
+過去1カ月のアクティブなAndroid端末は14億台
+アプリストア「Google Play」のアクティブユーザーは10億人以上
+
+http://www.itmedia.co.jp/news/articles/1509/30/news074.html
+
+Multi-device Applications sample
+https://github.com/googlesamples/android-UniversalMusicPlayer
 
 ---
