@@ -1,4 +1,17 @@
+# [はじめる前に知っておきたいAndroidアプリ開発のポイント](https://schoo.jp/class/2898)
 
+https://schoo.jp/class/2898
+
+* Androidアプリ開発を始めるための最初の一歩
+* Androidアプリ開発の種類・特徴と大まかな開発の流れ
+* 時代に合ったAndroidアプリを開発する方法
+
+この授業では未経験でAndroidアプリを作ってみたい・仕事にしたい、開発に興味がある方々を対象に、Androidアプリ開発はどんなことをするのか、始めに何から取りかかればよいか、
+といったさまざまな疑問点、不安点をクリアにすることで、受講生のモチベーションを高めることを目的とした講義形式の授業です。
+
+様々なAndroidアプリ開発から得られた経験を元に、はじめる前に知っておきたい大事なポイントを一つ一つ学んでいきましょう。
+
+---
 
 # Androidアプリ開発を始めるための最初の一歩
 
@@ -49,65 +62,34 @@
 
 ---
 
-## Androidアプリの開発言語
+## Androidアプリ開発の初歩を学ぶ方法
 
+* 入門書で学ぶ
+ * [Android学ぶ上での書籍について - DroidKaigiの登壇者として、発表までの過程をつらつら書いていこうと思う #droidkaigi](http://hack-it-iron.hatenablog.com/entry/2015/03/22/195939)
+* サンプルコード等で学ぶ
+* とにかく何かアプリを作ってみる
 
-
----
-
-## mixi-inc/AndroidTraining
-
-https://github.com/mixi-inc/AndroidTraining
-
----
-
-## 大事なこと
-
-とにかく何かアプリを作ってみる コードを書いてみる
-
-困ったらコードを読む
-
-できるエンジニアに質問する
+サンプルコード等で学ぶ方法についてスポットを当てる
 
 ---
 
-## OSSの力を借りる
+## Androidアプリ開発の初歩を学ぶ方法 -  サンプルコード等で学ぶ
 
-[iosched](https://github.com/google/iosched)
+* 公式に用意されているサンプルから学ぶ
+ * 網羅的に学べる + 細かい仕様まで説明が書かれている部分があるのでオススメ
+ * [Android Training](http://developer.android.com/training/index.html)
+ * [API Guides](http://developer.android.com/guide/index.html)
+ * [Google Samples](https://github.com/googlesamples?utf8=%E2%9C%93&query=android)
 
-[santa-tracker-android](https://github.com/google/santa-tracker-android)
-
-[Rebuild](https://github.com/rejasupotaro/Rebuild)
-
-[WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)
-
-[wordpress-mobile](https://github.com/wordpress-mobile)
-
----
-
-## Androidの書籍
-
-[Android学ぶ上での書籍について - DroidKaigiの登壇者として、発表までの過程をつらつら書いていこうと思う #droidkaigi](http://hack-it-iron.hatenablog.com/entry/2015/03/22/195939)
+* mixi-inc/AndroidTraining
+ * Javaの基礎からアプリ開発を行う場合オススメ
+ * https://github.com/mixi-inc/AndroidTraining
 
 ---
 
-## ドキュメントが充実している
+## 日々どこから情報を仕入れているか
 
-[Android Training](http://developer.android.com/training/index.html)
-
-[API Guides](http://developer.android.com/guide/index.html)
-
----
-
-## Google Play Services
-
-https://developers.google.com/android/
-
----
-
-## Google Samples
-
-https://github.com/googlesamples
+* Qiita tags Android http://qiita.com/tags/android
 
 ---
 
@@ -125,9 +107,10 @@ https://www.genymotion.com
 
 ---
 
-## Qiita
+## Google Play Services
 
-Qiita tags Android http://qiita.com/tags/android
+https://developers.google.com/android/
+
 
 ---
 
@@ -267,16 +250,34 @@ https://www.google.com/design/icons/
 
 ---
 
-## はじめる前に知っておきたいAndroidアプリ開発のポイント
+# TODO
 
-https://schoo.jp/class/2898
+* 時間内で全て書くことは難しいので、よくある質問等に対する答えをどこかにまとめる
+ * 話す内容は重視したい部分だけに絞る
 
-* Androidアプリ開発を始めるための最初の一歩
-* Androidアプリ開発の種類・特徴と大まかな開発の流れ
-* 時代に合ったAndroidアプリを開発する方法
+* 入門書で学ぶことの難しさをブログに追記 or 別記事で書く。Mが出てるとかASの更新が早いとか・・・
 
+# 初めてやる時に知りたいこと
 
-この授業では未経験でAndroidアプリを作ってみたい・仕事にしたい、開発に興味がある方々を対象に、Androidアプリ開発はどんなことをするのか、始めに何から取りかかればよいか、
-といったさまざまな疑問点、不安点をクリアにすることで、受講生のモチベーションを高めることを目的とした講義形式の授業です。
+* その分野でどんなものが流行っているのか
+* どこから情報を得ているのか
+* 開発環境について
+* 基礎の勉強法・出だし。どこにいい教材があるかどうか
 
-様々なAndroidアプリ開発から得られた経験を元に、はじめる前に知っておきたい大事なポイントを一つ一つ学んでいきましょう。
+# おまけ
+
+---
+
+## OSSの力を借りる
+
+[iosched](https://github.com/google/iosched)
+
+[santa-tracker-android](https://github.com/google/santa-tracker-android)
+
+[Rebuild](https://github.com/rejasupotaro/Rebuild)
+
+[WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)
+
+[wordpress-mobile](https://github.com/wordpress-mobile)
+
+---
