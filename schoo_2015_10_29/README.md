@@ -121,6 +121,15 @@ Google APIs Emulator
 
 ---
 
+## Androidアプリ開発の種類・特徴
+
+* アプリケーション開発以外もある
+ * 
+
+
+
+---
+
 ## 段階リリース
 
 アルファ版またはベータ版テストと段階的公開の使用
@@ -184,6 +193,9 @@ http://developer.android.com/distribute/essentials/index.html
 とにかく色んなアプリを見てみる
 * google playの最近のアプリやTopアプリ
 * JPだけでなく、他の国のStoreも見る
+
+アプリのライセンスを見る
+* どんなライブラリが使われているか
 
 ---
 
