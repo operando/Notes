@@ -30,6 +30,7 @@ https://schoo.jp/class/2898
 * 各バージョンごとにコードネームが付いてる
 * コードネームは、菓子の名前が付いてる
 * コードネームやバージョンで呼ぶかは人それぞれ
+* 同じコードネームにMR(Maintenance release)が付くこともある
 * 最新バージョン6.0はAndroid M(Marshmallow)と呼ばれる
 
 ![](images/android_version_table.png)
@@ -123,8 +124,11 @@ Google APIs Emulator
 
 ## Androidアプリ開発の種類・特徴
 
+* アプリケーション開発
+ * 自社アプリ、受託アプリ、個人アプリ
 * アプリケーション開発以外もある
- * 
+ * Android OSそのものの開発
+ *
 
 
 
@@ -133,7 +137,7 @@ Google APIs Emulator
 ## 段階リリース
 
 アルファ版またはベータ版テストと段階的公開の使用
-https://support.google.com/googleplay/android-developer/answer/3131213
+https://support.google.com/googleplay/android-developer/answer/3131213#staged
 
 ---
 
