@@ -122,64 +122,105 @@ Google APIs Emulator
 
 ---
 
-## Androidアプリ開発の種類・特徴
+## Androidアプリ開発の種類
 
 * アプリケーション開発
  * 自社アプリ、受託アプリ、個人アプリ
 * アプリケーション開発以外もある
  * Android OSそのものの開発
- *
-
-
+ * 新しいスマートフォン開発
 
 ---
 
-## 段階リリース
+## Androidアプリ開発の特徴
 
-アルファ版またはベータ版テストと段階的公開の使用
-https://support.google.com/googleplay/android-developer/answer/3131213#staged
-
----
-
-## 複数端末でのテストの話
-
-最近機種や最近のOSには、出来る限り新しいのが出たらすぐに対応する
-ダウンロードしてから、「あなた端末は非対応です」はとてもよくないの
-対策として、ダウンロードできないようにする
+* 少人数での開発が多い(経験則)
+* 幅広い端末に対応したアプリ開発が求められる
+ * OSバージョン
+ * 解像度
+ * ハードウェア(RAM,GPU...)
+* リリースサイクルが早い
+* 大規模な開発がある(OSそのものの開発等)
 
 ---
 
-## Other
+## Androidアプリ開発の大まかな開発の流れ
 
-評価大事
+例) メルカリの開発フロー
 
+![](images/flow.png)
 
-デザイナーが決めたUIをどんなViewを使用して実現するのか
-* いっぱいViewある
-* バージョンごとに見た目が違う
-* 解像度がばらばら
-
-技術的判断
-
-DeployGate
-https://deploygate.com/
+このフローを継続的に行う
 
 ---
 
-## 余談
+## 企画・デザイン
 
-Google Play アプリ ポリシー センター
-https://support.google.com/googleplay/android-developer/answer/4430948?hl=ja
+* 新機能や機能改善を企画する
+* デザインも並行して進める
+* 開発によってこの部分の作業はどこが受け持つか変わる
+ * 企画・デザインと開発は別々の会社で行う等...
 
-Core App Quality
-http://developer.android.com/distribute/essentials/quality/core.html
+---
 
-Essentials for a Successful App
-http://developer.android.com/distribute/essentials/index.html
+## 開発
+
+* アプリの機能を実装する
+* 開発したものを社内に配信する
+ * [DeployGate](https://deploygate.com)
+*
+
+---
+
+## QA
+
+* 開発したアプリのテストを行う
+* 基本的にはテスト専門のエンジニアがテストを行う
+ * 開発規模によっては、実装した人がそのままテストも行う
+* テスト専門の会社にテスト作業をお願いするケースもある
+ * Androidは端末が多く、自社にテストしたい端末がない場合等...
+
+---
+
+## リリース
+
+* 開発したアプリをGoogle Playにリリースする
+* 段階的公開を利用するケースもある
+ * 大きな変更を行った場合に致命的な問題が全ユーザに影響しないため
+ * 段階的に新しい機能の利用率を見る
+ * https://support.google.com/googleplay/android-developer/answer/3131213#staged
+* Google Playのアプリがアップデートされたか監視する
+ * [tonkotsu](https://github.com/operando/tonkotsu)
+
+---
+
+## 分析
+
+* リリース後に致命的な問題が発生していないか
+ * [Crashlytics](https://fabric.io/kits/android/crashlytics)
+ * Google Playのレビューをチェック
+* 次の企画に活かすため様々なログを分析する
+* アクセス解析のサービス
+ * Google Analytics
+ * Mixpanel
 
 ---
 
 # 時代に合ったAndroidアプリを開発する方法
+
+---
+
+## とにかく色んなアプリを見てみる・使ってみる
+
+* iOSのアプリも使ってみる
+
+---
+
+## Material Design
+
+---
+
+## Android 6.0 / M(Marshmallow)
 
 ---
 
@@ -282,5 +323,40 @@ http://www.itmedia.co.jp/news/articles/1509/30/news074.html
 
 Multi-device Applications sample
 https://github.com/googlesamples/android-UniversalMusicPlayer
+
+---
+
+## 複数端末でのテストの話
+
+最近機種や最近のOSには、出来る限り新しいのが出たらすぐに対応する
+ダウンロードしてから、「あなた端末は非対応です」はとてもよくないの
+対策として、ダウンロードできないようにする
+
+---
+
+## Other
+
+評価大事
+
+
+デザイナーが決めたUIをどんなViewを使用して実現するのか
+* いっぱいViewある
+* バージョンごとに見た目が違う
+* 解像度がばらばら
+
+技術的判断
+
+---
+
+## 余談
+
+Google Play アプリ ポリシー センター
+https://support.google.com/googleplay/android-developer/answer/4430948?hl=ja
+
+Core App Quality
+http://developer.android.com/distribute/essentials/quality/core.html
+
+Essentials for a Successful App
+http://developer.android.com/distribute/essentials/index.html
 
 ---
