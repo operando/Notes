@@ -1,252 +1,137 @@
 # [はじめる前に知っておきたいAndroidアプリ開発のポイント](https://schoo.jp/class/2898)
 
 
-# 自己紹介
+# 2. 自己紹介
 
-- 岡野 忍 (@operandoOS)
-- 株式会社メルカリ
-- Androidのコードを読む勉強会を運営
- - まったりAndroid Framework Code Reading
+* 岡野 忍 ([@operandoOS](https://twitter.com/operandoOS))
+* 株式会社メルカリ
+* Androidのコードを読む勉強会を運営
+ * [まったりAndroid Framework Code Reading](https://mandroidfcr.doorkeeper.jp/)
 
 
-# この授業について - 対象
+## 8. Androidのバージョン別シェア率
 
-- これからAndroidアプリを作ってみたい、興味がある人
-- Androidアプリ開発を仕事にしたい人
+* [Dashboards](https://developer.android.com/about/dashboards/index.html)
+ * シェア率等が月一で更新される
+ *  https://developer.android.com/about/dashboards/index.html
 
 
-# この授業について - 目的
+## 10. Android Studio
 
-- Androidアプリ開発はどんなことをするのか、始めに何から取りかかればよいか、といったさまざまな疑問点、不安点をクリアにする
+* [Android Studio最速入門～効率的にコーディングするための使い方](http://gihyo.jp/dev/serial/01/android_studio)
 
 
-# Androidアプリ開発を始めるための最初の一歩
+## 12. アプリをどこで動かすか
 
-## Androidについて
+* [Genymotion](https://www.genymotion.com/)
 
-- Googleが提供しているモバイル向けOS
-- 最新バージョンは6.0
-- アプリ開発するために使用する言語は基本的にはJava
-- オープンソースなOSで、誰でも開発できる
-- 様々なデバイスで動く TV,Auto,Watch,Mobile...
 
+## 20. 入門書で学ぶ
 
-## Androidのバージョンの特徴
+* [Android学ぶ上での書籍について](http://hack-it-iron.hatenablog.com/entry/2015/03/22/195939)
 
-- 各バージョンごとにコードネームが付いてる
-- コードネームは、菓子の名前が付いてる
-- コードネームやバージョンで呼ぶかは人それぞれ
-- 同じコードネームにMR(Maintenance release)が付くこともある
-- 最新バージョン6.0はAndroid M(Marshmallow)と呼ばれる
 
-![](images/android_version_table.png)
+## 23. サンプルコード等で学ぶ
 
+* [Android Training](http://developer.android.com/training/index.html)
+* [API Guides](http://developer.android.com/guide/index.html)
+* [Samples](https://developer.android.com/samples/index.html)
+* [Github - Google Samples](https://github.com/googlesamples?utf8=%E2%9C%93&query=android)
 
-## Androidのバージョン別シェア率
+## 25. サンプルコード等で学ぶ
 
-- 表を見るかぎりでは、主流なバージョンは4.4(KitKat)
-- 近頃シェア率が増えてるのは5.0や5.1(Lollipop)
-- 今後増えるのは最近リリースされた6.0(Marshmallow)
-- しかし、より広いバージョンに対応したアプリ開発が求められる
+* [mixi-inc/AndroidTraining](https://github.com/mixi-inc/AndroidTraining)
 
-![](images/android_version_table.png)
 
-![](images/android_version_graf.png)
+## 26. 日々どこから情報を仕入れているか
 
-[Dashboards](https://developer.android.com/about/dashboards/index.html)
+* [Qiita tags Android](http://qiita.com/tags/android)
+* [Android Developers Blog](http://android-developers.blogspot.jp/)
+* [Android Weekly](http://androidweekly.net/#latest-issue)
+* [Android Developers Backstage](http://androidbackstage.blogspot.jp/)
+* [Fragmented](http://fragmentedpodcast.com/)
 
 
-## Android Studio
+## 27. Androidより深く学ぶために
 
-- Androidアプリ開発をする上での統合開発環境
-- 最新の安定バージョンは1.4
-- EclipseよりAndroid Studioを使うべき
-- Eclipse向けのサポートは今年中で終了予定
-- Android Studio最速入門～効率的にコーディングするための使い方
- - http://gihyo.jp/dev/serial/01/android_studio
+* [Android セキュアコーディングガイド](https://www.jssec.org/report/securecoding.html)
+* [The Android Arsenal](https://android-arsenal.com/)
+* OS標準の開発者オプション
+ * [Android 5.0 Lollipopの開発者オプション詳細解説](http://techbooster.org/android/environment/16955/)
+* Github上で公開されているアプリのソースコード
+ * [iosched](https://github.com/google/iosched)
+ * [santa-tracker-android](https://github.com/google/santa-tracker-android)
+ * [Rebuild](https://github.com/rejasupotaro/Rebuild)
+ * [WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)
+ * [wordpress-mobile](https://github.com/wordpress-mobile)
 
-![](images/AndroidStudio.png)
+## 34. 開発
 
+* [DeployGate](https://deploygate.com/?locale=ja)
 
-## Androidアプリ開発の初歩を学ぶ方法
 
-- 入門書で学ぶ
- - [Android学ぶ上での書籍について](http://hack-it-iron.hatenablog.com/entry/2015/03/22/195939)
-- サンプルコード等で学ぶ
-- とにかく何かアプリを作ってみる
+## 37. リリース
 
-サンプルコード等で学ぶ方法についてスポットを当てる
+* [アルファ版またはベータ版テストと段階的公開の使用](https://support.google.com/googleplay/android-developer/answer/3131213)
+* [tonkotsu](https://github.com/operando/tonkotsu)
 
 
-## Androidアプリ開発の初歩を学ぶ方法 -  サンプルコード等で学ぶ
+## 39. 分析
 
-- 公式に用意されているサンプルから学ぶ
- - 網羅的に学べる + 細かい仕様まで説明が書かれている部分があるのでオススメ
- - [Android Training](http://developer.android.com/training/index.html)
- - [API Guides](http://developer.android.com/guide/index.html)
- - [Google Samples](https://github.com/googlesamples?utf8=%E2%9C%93&query=android)
-- mixi-inc/AndroidTraining
- - Javaの基礎からアプリ開発を行う場合オススメ
- - https://github.com/mixi-inc/AndroidTraining
+* [Crashlytics](https://try.crashlytics.com/)
 
 
-## 開発を始めるにあたりアプリをどこで動かすか
+## 42. Material Design
 
-- エミュレータ
- - Google APIs Emulator-[Google Play Services](https://developers.google.com/android/)の機能も試せるエミュレータ
- - [Genymotion](https://www.genymotion.com)-標準ではGoogle Play Servicesの機能が試せない。操作速度が早い
- - まず、開発を始めたいならエミュレータがオススメ
-- 実機(Android 端末)
- - 実際にアプリを使う人と同じ感覚で開発したアプリを試せる
- - エミュレータではわかりづらい機種依存や操作感の違いがわかる
- - 色んな人に使って欲しいアプリを開発したい場合は実機がオススメ
+* [Material Design Top](https://design.google.com/)
+* [Material Design Introduction](https://www.google.com/design/spec/material-design/introduction.html)
 
 
-## 日々どこからAndroidの情報を仕入れているか
+## 44. Material Design
 
-- [Qiita tags Android](http://qiita.com/tags/android)
- - Androidに関するテックネタが日々投稿されている
-- [Android Developers Blog](http://android-developers.blogspot.jp/)
- - Androidの最新情報など、開発に重要な記事が投稿されている
-- [Android Weekly](http://androidweekly.net/#latest-issue)
- - Androidの情報を週一でまとめてくれているサイト
-- [Android Developers Backstage](http://androidbackstage.blogspot.jp/) , [Fragmented](http://fragmentedpodcast.com/)
- - 海外のAndroid開発が行っているPodcast
+* [Material Design 時代の最新アプリ UI/UX デザイン  〜 マルチデバイス対応とウェアラブル体験のために](https://www.youtube.com/watch?v=xKrtTlCvB-Q&feature=youtu.be&t=3h59m34s)
 
 
-## その他アプリ開発に役立つもの
+## 46. Material icons
 
-- OS標準のデバッグオプション
-- Github上で公開されているOSSのアプリ
-- Android セキュアコーディングガイド
+* [Material icons](https://www.google.com/design/icons/)
 
 
-# Androidアプリ開発の種類・特徴と大まかな開発の流れ
+## 47. Material Design - Sample
 
+* [Topeka for Android](https://github.com/googlesamples/android-topeka)
 
-## Androidアプリ開発の種類
 
-- アプリケーション開発
- - 自社アプリ、受託アプリ、個人アプリ
-- アプリケーション開発以外もある
- - Android OSそのものの開発
- - 新しいスマートフォン開発
+## 49. Android開発者の カンファレンスに参加する
 
+* [shibuya.apk](http://shibuya-apk.connpass.com/)
+* [Roppongi.aar](http://roppongi-aar.connpass.com/)
+* [potatotips](potatotips)
 
-## Androidアプリ開発の特徴
 
-- 少人数での開発が多い(経験則)
-- 幅広い端末に対応したアプリ開発が求められる
- - OSバージョン
- - 解像度
- - ハードウェア(RAM,GPU...)
-- リリースサイクルが早い
-- 大規模な開発がある(OSそのものの開発等)
+## 50. Android開発者の カンファレンス - 日本
 
+* [Android Bazaar & Conference Diverse 2015 Kanazawa](http://connpass.com/event/21874/)
+* [DroidKaigi 2015](https://droidkaigi.github.io/2015/)
+* [DroidKaigi 2016](https://droidkaigi.github.io/2016/)
 
-## Androidアプリ開発の大まかな開発の流れ
 
-例) メルカリの開発フロー
+## 51. Android開発者の カンファレンス - Global
 
-![](images/flow.png)
+* [Droidcon](http://droidcon.com/)
+* [Google IO](https://events.google.com/io2015/)
 
-このフローを継続的に行う
 
+## 52. Android 6.0 / M(Marshmallow)
 
-## 企画・デザイン
+* [Android 6.0 / M(Marshmallow)](http://developer.android.com/intl/ja/about/versions/marshmallow/android-6.0.html)
 
-- 新機能や機能改善を企画する
-- デザインも並行して進める
-- 開発によってこの部分の作業はどこが受け持つか変わる
- - 企画・デザインと開発は別々の会社で行う等...
 
+## 53. Runtime Permissions
 
-## 開発
+* [Runtime Permissions](http://developer.android.com/intl/ja/training/permissions/index.html)
 
-- アプリの機能を実装する
- - 複数解像度の端末で確認する(スマホ、タブレット)
- - デバッグメニューを使って開発を効率化
- - テストコードを書く(JUnit,Spoon)
- - Github上でCode Reviewする
-- 開発したものを社内に配信する
- - [DeployGate](https://deploygate.com)
 
+## 57. 告知
 
-## QA
-
-- 開発したアプリのテストを行う
-- 基本的にはテスト専門のエンジニアがテストを行う
- - 開発規模によっては、実装した人がそのままテストも行う
-- テスト専門の会社にテスト作業をお願いするケースもある
- - Androidは端末が多く、自社にテストしたい端末がない場合等...
-
-
-## リリース
-
-- 開発したアプリをGoogle Playにリリースする
-- 段階的公開を利用するケースもある
- - 大きな変更を行った場合に致命的な問題が全ユーザに影響しないため
- - 段階的に新しい機能の利用率を見る
- - https://support.google.com/googleplay/android-developer/answer/3131213#staged
-- Google Playのアプリがアップデートされたか監視する
- - [tonkotsu](https://github.com/operando/tonkotsu)
-
-
-## 分析
-
-- リリース後に致命的な問題が発生していないか
- - [Crashlytics](https://fabric.io/kits/android/crashlytics)
- - Google Playのレビューをチェック
-- 次の企画に活かすため様々なログを分析する
-- アクセス解析のサービス
- - Google Analytics
- - Mixpanel
-
-
-# 時代に合ったAndroidアプリを開発する方法
-
-
-## Material Design
-
-- Googleが発表したデザインガイドライン
-- あらゆるスクリーンサイズ・プラットフォームで統一したもの
- - ビジュアル、モーション、インタラクション
-- Material Designを採用するアプリが増えている
-- AndroidのデザインそのものがMaterial Designに最適化されている
-- Material Designに適したiconが提供されている
-
-
-## Android開発者のカンファレンスに参加する
-
-- Android開発の様々な事例・ナレッジを知ることができる
-- 日々開発で疑問に思っていることなど、色んなエンジニアと情報交換ができる
-- 定期的に開催している勉強会にも参加してみる
-
-- 日本のカンファレンス
- - [ABC](http://abc.android-group.jp/2015s/)
- - [DroidKaigi 2015](https://droidkaigi.github.io/2015/),[DroidKaigi 2016](https://droidkaigi.github.io/2016/)
-
-- Globalカンファレンス
- - [Droidcon](http://droidcon.com/)
- - [Google IO](https://events.google.com/io2015/)
-
-
-## Android 6.0 / M(Marshmallow)
-
-- 大きな変更が加わっているAndroidの最新バージョン
- - Runtime Permissions,Doze,App Standby,Auto Backup,Fingerprint Authentication
-- よりユーザ目線でアプリを作る必要がある
- -  セキュリティ、省電力、Backup & Sync
-- 特に新しいRuntime Permissionsの仕組みは開発者にとっても大きな変更
- - 今まではインストール時にPermission(権限)の許可を得ていた
- - MからはユーザがPermissionを必要とする操作をした際に許可を求める
-
-
-# まとめ
-
-
-## まとめ
-
-- Androidの基礎を学ぶ方法・情報収集の方法を知り、継続的に知識を身に付ける
-- Android開発の種類・特徴を理解し、自分にあった開発をする
-- 時代に合ったAndroidアプリを開発ために新しい情報を積極的学ぶ
+* [メルカリはAndroidエンジニア積極採用中です！](https://www.wantedly.com/projects/11969)

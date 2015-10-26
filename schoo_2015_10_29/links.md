@@ -62,7 +62,7 @@
 * Android Developers Backstage
  * http://androidbackstage.blogspot.jp/
 
-* [Fragmented
+* Fragmented
  * http://fragmentedpodcast.com/
 
 
