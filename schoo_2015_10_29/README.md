@@ -1,3 +1,22 @@
+
+# schoo 資料もろもろ
+
+* 主に資料内で紹介しているもののリンク集
+* 一部、資料内に書ききれなかったものあり
+
+# スライド
+
+* coming soon
+
+# Keynote Template
+
+* [更に大体いい感じになるkeynoteテンプレート「Azusa Colors」作った](http://memo.sanographix.net/post/113681262780)
+
+# Convert markdown to keynote
+
+* [md2key](https://github.com/k0kubun/c)
+
+
 # [はじめる前に知っておきたいAndroidアプリ開発のポイント](https://schoo.jp/class/2898)
 
 
@@ -135,3 +154,37 @@
 ## 57. 告知
 
 * [メルカリはAndroidエンジニア積極採用中です！](https://www.wantedly.com/projects/11969)
+
+
+# おまけ
+
+
+## Google Play Services
+
+* https://developers.google.com/android/
+
+
+## Gradle
+
+* http://gradle.org/
+* http://google.github.io/android-gradle-dsl/
+* http://google.github.io/android-gradle-dsl/current/
+* http://mixi-inc.github.io/AndroidTraining/introductions/1.05.how-to-build-for-gradle.html
+* https://gradle.org/getting-started-android/
+* http://wasabeef.jp/android-gradle/
+* http://tools.android.com/tech-docs/new-build-system/user-guide
+
+
+## Google Play アプリ ポリシー センター
+
+* https://support.google.com/googleplay/android-developer/answer/4430948?hl=ja
+
+
+## Core App Quality
+
+* http://developer.android.com/distribute/essentials/quality/core.html
+
+
+## Essentials for a Successful App
+
+* http://developer.android.com/distribute/essentials/index.html
