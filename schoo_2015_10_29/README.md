@@ -162,16 +162,13 @@
 
 ## Android OS / ソースコード
 
-Android OSそのもののソースコードが見れるサイト。
-
-内部構造を知る場合にとても便利。
-
 * [Androidソースコード検索サービス](https://sites.google.com/site/devcollaboration/codesearch)
-
-Android OSの仕様をドキュメントにまとめているもの。
+ * Android OSそのもののソースコードが見れるサイト。
+ * 内部構造を知る場合にとても便利。
 
 * [Android Open Source Project](https://source.android.com/index.html)
-
+ * Android OSの仕様をドキュメントにまとめているもの。
+ * その他、内部構造を理解するための情報が詰まってる
 
 ## Google Play Services
 
