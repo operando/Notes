@@ -143,7 +143,9 @@
 
 ## 52. Android 6.0 / M(Marshmallow)
 
-* [Android 6.0 / M(Marshmallow)](http://developer.android.com/intl/ja/about/versions/marshmallow/android-6.0.html)
+* [Android 6.0 APIs](http://developer.android.com/intl/ja/about/versions/marshmallow/android-6.0.html)
+* [Android 6.0 Changes](http://developer.android.com/intl/ja/about/versions/marshmallow/android-6.0-changes.html)
+* [Android 6.0 Samples](http://developer.android.com/intl/ja/about/versions/marshmallow/samples.html)
 
 
 ## 53. Runtime Permissions
@@ -157,6 +159,18 @@
 
 
 # おまけ
+
+## Android OS / ソースコード
+
+Android OSそのもののソースコードが見れるサイト。
+
+内部構造を知る場合にとても便利。
+
+* [Androidソースコード検索サービス](https://sites.google.com/site/devcollaboration/codesearch)
+
+Android OSの仕様をドキュメントにまとめているもの。
+
+* [Android Open Source Project](https://source.android.com/index.html)
 
 
 ## Google Play Services
