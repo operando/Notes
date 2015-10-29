@@ -66,7 +66,7 @@
  * http://fragmentedpodcast.com/
 
 
-## 27. Androidより深く学ぶために
+## 27. Androidをより深く学ぶために
 
 * Android セキュアコーディングガイド
  * https://www.jssec.org/report/securecoding.html
