@@ -86,6 +86,12 @@
 * アルファ版またはベータ版テストと段階的公開の使用
  * https://support.google.com/googleplay/android-developer/answer/3131213
 
+* アプリのアップロードと販売または配布 > 標準公開または時限公開を使用したアプリの更新
+  * https://support.google.com/googleplay/android-developer/answer/113469?rd=1#modes
+
+* Google Play Developer Consoleの時限公開機能を試してみた
+ * http://qiita.com/konifar/items/4f8da43e98c573ceb7c4
+
 * tonkotsu
  * https://github.com/operando/tonkotsu
 
