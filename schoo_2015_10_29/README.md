@@ -6,7 +6,8 @@
 
 # スライド
 
-* coming soon
+* [はじめる前に知っておきたいAndroidアプリ開発のポイント](http://www.slideshare.net/shinobuokano7/android-54556612)
+ * http://www.slideshare.net/shinobuokano7/android-54556612
 
 # Keynote Template
 
