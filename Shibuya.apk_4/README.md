@@ -2,7 +2,13 @@
 
 # Slide
 
-Coming Soon...
+* **[JobScheduler Code Reading](http://www.slideshare.net/shinobuokano7/jobscheduler-code-reading)**
+
+# 資料内のリンクとかJobSchedulerの電波メモ
+
+* [operando/JobScheduler-Code-Reading](https://github.com/operando/JobScheduler-Code-Reading)
+* [Shibuya.apk #4 資料リンク](https://github.com/operando/Notes/tree/master/Shibuya.apk_4)
+
 
 # JobScheduler Code Reading
 
