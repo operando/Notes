@@ -129,17 +129,30 @@ public static void schedule(Context ctx, long minDelay) {
 
 # Demo
 
-* setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)のjobを１つずつ登録
+* JobInfo.Builder#setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)のjobを１つずつ登録
 * 1個目のjobを登録したら、jobはREADYのままで止まっている(Pendingにも入ってない)
 * 2個目のjobを登録したら、jobがActiveになった
 * 上の条件に合致したので、jobをpending queueに移動させて、実行したのだと推測
 
 # デバイス再起動後も動くJobが作れる
 
-* JobScheduler#setPersisted(true)でJobが再起動後も実行される
+* JobInfo.Builder#setPersisted(true)でJobが再起動後も実行される
 * 開発者が再起動後に自分でまたJobを登録する必要がない
-* JobScheduler#setExtras(PersistableBundle)で再起動後も値を引き継げる
+* JobInfo.Builder#setExtras(PersistableBundle)で再起動後も値を引き継げる
 * 素晴らしい！
+
+#### サンプル(こんな感じ)
+
+```java
+PersistableBundle persistableBundle = new PersistableBundle();
+persistableBundle.putInt("id", i);
+JobInfo jobInfo = new JobInfo.Builder(i, serviceName)
+        .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
+        .setPersisted(true)
+        .setExtras(persistableBundle)
+        .build();
+scheduler.schedule(jobInfo);
+```
 
 # あれ？再起動後も引き継げるってことは？
 
@@ -221,10 +234,10 @@ public static void schedule(Context ctx, long minDelay) {
  * http://tools.oesf.biz/android-6.0.0_r1.0/xref/frameworks/base/core/java/android/os/PersistableBundle.java#restoreFromXml
 
 
-# Ramサイズによって同時実行できるJobの数が変わる
+# RAMサイズによって同時実行できるJobの数が変わる
 
-* System propertyのro.config.low_ram=trueの場合、同時実行できるJobの数は1つ
-* System propertyのro.config.low_ram=faseの場合、同時実行できるJobの数は3つ
+* System propertyのro.config.low_ram=trueの場合、**同時実行できるJobの数は1つ**
+* System propertyのro.config.low_ram=faseの場合、**同時実行できるJobの数は3つ**
 * ココらへん見るとJobの数についてわかる
  * http://tools.oesf.biz/android-6.0.0_r1.0/xref/frameworks/base/services/core/java/com/android/server/job/JobSchedulerService.java#77
  * http://tools.oesf.biz/android-6.0.0_r1.0/xref/frameworks/base/services/core/java/com/android/server/job/JobSchedulerService.java#352
