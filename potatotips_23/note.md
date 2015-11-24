@@ -1,4 +1,6 @@
 
+# Slackに隕石という名のスクリーンショットを落下させる話
+
 # About me
 
 * Shinobu Okano(@operandoOS)
@@ -31,7 +33,7 @@ new Meteoroid.Builder()
 
 # Meteoroid
 
-```gradle
+```java
 allprojects {
     repositories {
         jcenter()
@@ -105,10 +107,9 @@ public class MyApplication extends Application {
 }
 ```
 
-
 # Meteoroid
 
-```gradle
+```java
 allprojects {
     repositories {
         jcenter()
