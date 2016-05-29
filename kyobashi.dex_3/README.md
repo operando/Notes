@@ -113,6 +113,12 @@ slack {
 ![](./arts/gradle-slack-plugin_and_gradle-version-plugin_and_ci_and_slack.png)
 
 
+## その他に…
+
+* [dexcount-gradle-plugin](https://github.com/KeepSafe/dexcount-gradle-plugin)でメソッド数カウントして通知する
+* [gradle-android-apk-size-plugin](https://github.com/vanniktech/gradle-android-apk-size-plugin)でapkのサイズ調べて通知する
+* などなど…
+
 ## 応用編
 
 ## これ覚えてますか？
