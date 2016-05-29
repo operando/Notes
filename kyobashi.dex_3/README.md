@@ -82,14 +82,14 @@ slack {
 ![](./arts/gradle-version-plugin.png)
 
 
-## gradle-versions-plugin + gradle-versions-plugin + CI
+## gradle-slack-plugin + gradle-versions-plugin + CI
 
 * CI上でdependencyUpdates taskを実行
 * dependencyUpdates taskの出力結果をSlackに通知する
 * 簡単！！
 
 
-## gradle-versions-plugin + gradle-versions-plugin + CI
+## gradle-slack-plugin + gradle-versions-plugin + CI
 
 * 実行するタイミングは細かく設定可能
  * Pull RequestをMerge or masterにPushされた時のみ実行とか...
