@@ -1,5 +1,9 @@
 # Lightweight-Stream-APIのあるAndroidアプリ開発
 
+## SlideShare
+
+http://www.slideshare.net/shinobuokano7/lightweightstreamapiandroid
+
 ## Lightweight-Stream-API?
 
 * "Stream API from Java 8 rewritten on iterators for Java 7 and below."
