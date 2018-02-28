@@ -68,7 +68,7 @@ jobs:
 
 ## ページを保持してくれ！頼む！
 
-* Speakerタブに移動してもSessionタブが消えないようにしたい！
+* Speakerタブに移動してもSessionタブが消えないようにしたい！
 * offscreenPageLimitを2にすればよさそう！
 * binding.sessionsViewPager.offscreenPageLimit = 2
 
