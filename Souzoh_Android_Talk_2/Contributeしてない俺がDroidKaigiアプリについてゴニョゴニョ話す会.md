@@ -88,10 +88,17 @@ jobs:
 
 ## OkHttpのLogはリリース版は出さない方がいい！
 
-* TODO
+![](./images/1.png)
 
+![](./images/2.png)
 
-## つまり
+![](./images/3.png)
+
+![](./images/4.png)
+
+![](./images/5.png)
+
+![](./images/6.png)
 
 
 ## OkHttpのLogはリリース版は出さない方がいい！
