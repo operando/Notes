@@ -1,14 +1,18 @@
 # デザインの実装を解体する技術
 
+## スライド
+
+* https://speakerdeck.com/operando/dezainfalseshi-zhuang-wojie-ti-suruji-shu
+
 ## (デザインを語る前に...) エンジニアなら実装できないとね！！
 
 
-### デザインの実装を解体するとは？
+## デザインの実装を解体するとは？
 
 * 色んなアプリのデザイン・レイアウトがどのように組まれているのかを調べる
 
 
-### 解体するために
+## 解体するために
 
 * 日頃から色んなアプリに触れる
 * 色んなジャンルのアプリに触れる
@@ -17,19 +21,19 @@
 ## 話す内容は自身が作っていないアプリに 対してのアプローチ
 
 
-### デザインの構造を解体する
+## デザインの構造を解体する
 
 * Show layout bounds
  * レイアウトの境界を表示する
  * レイアウトの構造がなんとなくわかる
 
 
-### Show layout bounds
+## Show layout bounds
 
 * ![](./images/show_l.png)
 
 
-### Show layout bounds
+## Show layout bounds
 
 * adbから有効にする
 
@@ -38,7 +42,7 @@ adb shell setprop debug.layout true
 ```
 
 
-### Show layout bounds
+## Show layout bounds
 
 * レイアウトの構造がなんとなくわかるので便利
 * でも隠れてるViewや細かい構造がわからない
@@ -47,7 +51,7 @@ adb shell setprop debug.layout true
   * https://developer.android.com/studio/debug/layout-inspector.html
 
 
-### デザインの構造を解体する
+## デザインの構造を解体する
 
 * 画面の密度を変更する
 * 文字のサイズを変更する
@@ -55,7 +59,7 @@ adb shell setprop debug.layout true
 * 想定外の画面や文字サイズにどう対応しているか見る
 
 
-### 画面の密度・文字のサイズを変更する
+## 画面の密度・文字のサイズを変更する
 
 * Accessibility → Font size → Largest
 * Accessibility → Display size → Largest
@@ -66,20 +70,20 @@ or
 * Display → Display size → Largest
 
 
-### 画面の密度・文字のサイズを変更する
+## 画面の密度・文字のサイズを変更する
 
 ![](./images/dd.png)
 ![](./images/font.png)
 
 
-### 画面の密度を変更する
+## 画面の密度を変更する
 
 * adb shellからも変更できるよ！
 * 設定値の上限がないので、やばい世界が見れる
 * 下限値はある！ → 72
 
 
-### 画面の密度を変更する
+## 画面の密度を変更する
 
 ```bash
 // 密度を変更する
@@ -90,7 +94,7 @@ adb shell wm density reset
 ```
 
 
-### 文字のサイズを変更する
+## 文字のサイズを変更する
 
 * adb shellからも変更できるよ！
 * 設定値の上限がないので、やばい世界が見れる
@@ -100,44 +104,44 @@ adb shell settings put system font_scale 1.3
 ```
 
 
-### 画面の密度・文字のサイズを変更する
+## 画面の密度・文字のサイズを変更する
 
 * 限界はない💪
 
 
-### 画面の密度・文字のサイズを変更する
+## 画面の密度・文字のサイズを変更する
 
 * ただし壊れそう💖
 
 
-### デザインの構造を解体する
+## デザインの構造を解体する
 
 * View Hierarchyをdumpする
 * `adb shell dumpsys activity top`
 * dumpしたい画面を開いて実行
 
 
-### dumpsys activity top
+## dumpsys activity top
 
 ![](./images/view.png)
 
 
-### dumpsys activity top
+## dumpsys activity top
 
-* View.GONEとかで見れないViewもわかる
+* View.GONEとかで見れないViewもわかる
 * 動的にViewが変わったりしなければ丸見え
 * Viewのidがわかるのでゴニョゴニョできる
 * でも細かい属性の設定がわからない
 
 
-### デザインの構造を解体する
+## デザインの構造を解体する
 
 * apkを解体する
 * 最終手段? 💪
 * 最終兵器? 🔪
 
 
-### apkを解体するツール
+## apkを解体するツール
 
 * apktool ⚡
   * https://ibotpeaches.github.io/Apktool/
@@ -148,19 +152,19 @@ adb shell settings put system font_scale 1.3
   * https://elinux.org/Android_aapt
 
 
-### 端末からapkをさくっと引っこ抜く
+## 端末からapkをさくっと引っこ抜く
 
 * 素晴らしい記事あります！
 * dumpsys activity activitiesとpecoでゴニョゴニョして端末からapkを簡単に引っこ抜く
 * https://qiita.com/operandoOS/items/6fa77037560e52d11352
 
 
-### apkを解体するツール
+## apkを解体するツール
 
 * 解体方法は… ね？
 
 
-### 解体すると手に入るもの
+## 解体すると手に入るもの
 
 * リソース一式
  * レイアウトファイルも含む
@@ -169,14 +173,14 @@ adb shell settings put system font_scale 1.3
  * 難読化怖くないだいじょうぶ
 
 
-### 目的のレイアウトファイルを調べる その1
+## 目的のレイアウトファイルを調べる その1
 
 * 前に紹介したdumpsys activity topでリソースIDの名前はわかる
 * あとはIDが使用されているレイアウトを調べるだけ
 * grepでもいいし、エディターの検索でもいい
 
 
-### 目的のレイアウトファイルを調べる その2
+## 目的のレイアウトファイルを調べる その2
 
 * リソースIDから調べる
   * jarをゴニョゴニョして見るとリソースIDがわかる
@@ -186,7 +190,7 @@ adb shell settings put system font_scale 1.3
 * res/values/public.xmlを検索すると見つかる
 
 
-### 目的のレイアウトファイルを調べる その3
+## 目的のレイアウトファイルを調べる その3
 
 * その2と途中まで同じ
 * aaptを使って調べる
@@ -195,25 +199,25 @@ adb shell settings put system font_scale 1.3
 aapt d resources base.apk | grep 7f0a0020
 ```
 
-### 目的のレイアウトファイルを調べる その3
+## 目的のレイアウトファイルを調べる その3
 
 * 画像を貼る
 
 
-### apkを解体する
+## apkを解体する
 
 * レイアウトファイルが見れるのでぱない
 * 難読化されてなければCustom Viewもわかる
 
 
-### デザインの構造を解体する
+## デザインの構造を解体する
 
 * 見たことないデザインの実装を依頼されたら**「このデザイン、どのアプリとかでありました？」**を聞く
 * mazikore daizi
 * そこから今まで紹介した解体術を使う
 
 
-### まとめ
+## まとめ
 
 * 解体してデザインの実装の参考にする
 * 気になったデザインを解体してみてね！
@@ -227,12 +231,12 @@ aapt d resources base.apk | grep 7f0a0020
 ## おまけ
 
 
-### adb shell dumpsys activity topで出るView Hierarchyの内容を理解する
+## adb shell dumpsys activity topで出るView Hierarchyの内容を理解する
 
 * コード読め案件
 * http://tools.oesf.biz/android-8.1.0_r1.0/xref/frameworks/base/core/java/android/view/View.java#5482
 
-### adb shell settings put system font_scale周り
+## adb shell settings put system font_scale周り
 
 * 定義は以下
  * http://tools.oesf.biz/android-8.1.0_r1.0/xref/frameworks/base/core/java/android/provider/Settings.java#2996
@@ -263,7 +267,7 @@ private static final Validator FONT_SCALE_VALIDATOR = new Validator() {
 ```
 
 
-### adb shell wm density周り
+## adb shell wm density周り
 
 * http://tools.oesf.biz/android-8.1.0_r1.0/xref/frameworks/base/cmds/wm/src/com/android/commands/wm/Wm.java
   * adb shell wm実行した時に動くやーつ
