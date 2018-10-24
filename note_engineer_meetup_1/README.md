@@ -1,11 +1,19 @@
 # Support Android 9 Pie
 
+* note engineer meetup #1の発表資料の書き起こしです
+* https://pieceofcake.connpass.com/event/101173/
+
+
+## スライド
+
+* https://speakerdeck.com/operando/support-android-9-pie
+
 
 ## note Androidチームについて
 
 * チームと言えど、現在１人
 * ~~俺が3人分になる…~~
-* 成長の期待しかないチームです！
+* 成長の期待しかないチームです！
 
 ## 開発アプローチ
 
