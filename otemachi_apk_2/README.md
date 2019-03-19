@@ -51,6 +51,12 @@
   * Music
   * Downloads
 
+## Scoped storage
+
+* shared collectionに他アプリが作ったファイルを閲覧には、目的に応じて適切なPermissionが必要
+* shared collectionに他アプリが作ったファイルを変更には、特定のRoleが必要
+* 閲覧と変更を分けて考える
+
 
 ## Scoped storage
 
@@ -105,7 +111,7 @@
 ## Roles defined in Android Q
 
 
-* ![](./images/role.png)
+![](./images/role.png)
 
 
 ## どうしてRoleが必要だったのか？（推測）
@@ -145,8 +151,9 @@ if (roleManager.isRoleHeld(RoleManager.ROLE_MUSIC)) {
 ## Roleの付与をリクエストする
 
 
-* ![](./images/role_req1.png)
-* ![](./images/role_req2.png)
+|Role|Role|
+|---|---|
+|![](./images/role_req1.png)|![](./images/role_req2.png)|
 
 
 
@@ -237,13 +244,13 @@ startActivityForResult(i)
 
 ## ネットワークのSettings panelを開く
 
-* ![](./images/setting_panel.png)
+![](./images/setting_panel.png)
 
 
 ## Settings panels
 
 * UI部分がSliceで実装されてる
-* ラッパーがAndroidXで導入されるらしい
+* ラッパーがAndroidXで導入されるらしい
 
 
 ## Android Q Beta
@@ -253,4 +260,9 @@ startActivityForResult(i)
 * https://developer.android.com/preview
 
 
-## Thanks!!
+## 参考リンク
+
+* Scoped storage
+ * https://developer.android.com/preview/privacy/scoped-storage
+* Roles
+ * https://developer.android.com/preview/features/roles
