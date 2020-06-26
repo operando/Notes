@@ -21,6 +21,8 @@ noteではそれぞれをうまく活用しています（DLC以外）
 - DLC
 
 
+## 紹介するのは基本的にconfig.ymlを変更するだけで使えます
+
 ## cache
 
 - 成果物をcacheして、次のビルドにも活用する的なあれ
@@ -60,7 +62,7 @@ https://circleci.com/docs/ja/2.0/configuration-reference/#parallelism
 - 並列化しても多少の偏りは起きる
   - AマシンとBマシンで実行時間に差が出る
   - 差を調整する仕組みとして、Timing Dataが存在する
-- 並列化しすぎると時間短縮と従量課金のコストが 見合わなくなる
+- 並列化しすぎると時間短縮と従量課金のコストが見合わなくなる
 
 
 ## Running Tests in Parallel
@@ -72,7 +74,7 @@ https://circleci.com/docs/2.0/parallelism-faster-jobs/
 
 https://circleci.com/docs/ja/2.0/workflows/
 
-- jobの実行順序を定義して、いい感じにjobを 並列実行したりゴニョゴニョする
+- jobの実行順序を定義して、いい感じにjobを並列実行したりゴニョゴニョする
 - ちょっと複雑だけど慣れてくると便利
 - 逐次実行してたものを並列実行させられるようになると効果出てくる
 - 状況に応じて実行するWorkflowを変えたりすると便利
